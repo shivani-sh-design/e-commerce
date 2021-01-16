@@ -108,11 +108,7 @@ nav ul li a {
     margin: 20px auto;
   }
 }
-/*--feature--*/
-#feature {
-  width: 100vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .title-text  {
   text-align: center;
   padding-bottom: 70px;
@@ -224,6 +220,11 @@ background-color: #009688;
   width: 500px;
   line-height: 25px;
 }
+/*--feature--*/
+#feature {
+  width: 100vw;
+  
+}
 .feature-box{
 width: 80%;
 margin: auto;
@@ -287,4 +288,107 @@ flex-basis:100%;
 
   width: 100%;
  }
+}
+/*--services--*/
+
+#service{
+width: 100%;
+padding: 70px 0;
+background: #efefef;
+}
+.service-box{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: auto;
+}
+.single-service{
+  flex-basis:48%;
+  text-align: center;
+  border-radius: center;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.single-service img{
+  width: 100%;
+  border-radius: 7px;
+  
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background:linear-gradient(rgba(0,0,0,0.5),#009688);
+  opacity: 0;
+ transition: 1s;
+}
+.single-service:hover .overlay{
+opacity: 1;
+}
+.service-desc{
+width: 80%;
+position: absolute;
+bottom: 0;
+left: 50%;
+opacity:0;
+transform: translateX(-50%);
+transition: 1s;
+}
+hr{
+background: #fff;
+height: 2px;
+ border: 0;
+ margin:15px auto;
+ width:60%;
+}
+.service-desc p{
+font-size: 14px;
+}
+.single-service:hover .service-desc {
+bottom:40%;
+opacity:1;
+}
+@media screen and (max-width: 770px){
+  .single-service{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .service-desc p{
+    font-size: 12px;
+    }
+    hr{
+     margin:5px auto;
+  }
+  .single-service:hover .service-desc{
+    bottom:25% !important ;
+  }
+}
+/*--testimonial--*/
+#testimonial{
+width: 100%;
+padding: 70px;
+}
+.testimonial-row{
+  width: 80;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.testimonial-col{
+  flex-basis: 28%;
+  padding:10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px #00968814;
+  cursor: pointer;
+}
+.testimonial-col p{
+  font-size: 14px;
 }
