@@ -111,17 +111,37 @@ nav ul li a {
 /*--feature--*/
 #feature {
   width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.title-text {
+.title-text  {
   text-align: center;
   padding-bottom: 70px;
+  word-spacing: 4px;
 }
 
-.title-text h1 {
+.title-text p {
   margin: auto;
   font-size: 32px;
   color: #009688;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.title-text h1{
+    font-size: 50px;
 }
 
 div.product_container {
@@ -145,13 +165,28 @@ div.product_container .product-card img {
   width: 400px;
   height: 350px;
 }
-div.product_container .product-card h2,
-h3 {
+div.product_container .product-card h2,h3 {
   color: #fff;
 }
 div.product_container .product-card a {
   color: #fff;
   text-decoration: none;
+}
+#bracelete{
+     width: 150px;
+ padding: 10px 20px;
+outline: none;
+ color: #009688;
+ background-color: #000000;
+   
+}
+#bracelete:hover{
+color: #000000;
+background-color: #009688;
+
+
+
+
 }
 #detailedPage {
   position: relative;
