@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
-* {
+*,*::after,*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -182,10 +182,6 @@ outline: none;
 #bracelete:hover{
 color: #000000;
 background-color: #009688;
-
-
-
-
 }
 #detailedPage {
   position: relative;
@@ -225,19 +221,51 @@ background-color: #009688;
   width: 100vw;
   
 }
-.feature-box{
-width: 80%;
-margin: auto;
+div.feature-box{
+width: 100vw;
+margin: 0 auto;
+padding: 0 20px;
 display: flex;
 flex-wrap: wrap;
-align-items: center;
-text-align: center;
-
+justify-content: space-evenly;
+/* align-items:baseline;s */
 }
-.feature{
 
-  flex-basis: 50%;
+div.feature-box .feature{
+  flex-basis: 45%;
 }
+div.feature-box .feature h1{
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color:#009688 ;
+}
+div.feature-box .feature .feature-desc .feature-text{
+  font-size: large;
+  line-height: 30px;
+}
+div.feature-box .feature .feature-desc .feature-text span .fa{
+  float: left;
+  color:#009688;
+  border:1px solid #009688; 
+  font-size: 32px;
+  margin: 5px 10px 5px 0;
+  padding: 5px 7px;
+  border-radius: 10px;
+}
+
+div.feature-box .feature-img{
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+div.feature-box .feature-img img{
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 2px 10px rgba(0, 0, 0, 0.3);
+}
+/* 
 .feature-img{
 
   flex-basis:50%;
@@ -272,7 +300,7 @@ border:1px solid #009688;
 .feature-text p{
   padding: 0 20px;
   text-align: initial;
-}
+} */
 @media screen and (max-width:770px){
 
   .title-text h1{
@@ -310,9 +338,11 @@ margin: auto;
   margin-bottom: 20px;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 .single-service img{
   width: 100%;
+  height: 100%;
   border-radius: 7px;
   
 }
