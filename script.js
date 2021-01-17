@@ -9,7 +9,7 @@ const productDetails = {
   bracelete: {
     braceletetImgSrc: "./images/bracelete.jpeg",
     braceletePrice: "💲200",
-    braceleteAbout: 'Here are a few bracelet suggestions from budget to luxury wear. If you are a solitaire lover there is the Frele Diamond Bracelet and Vanilla Diamond Bracelet for those who prefer more traditional Kadas, there is the openable bracelet – Stars and Stripes Diamond Bracelet and the Kalamkari Diamond Kada. For the minimalists we have a series of delicate bracelets like the New Leaf Diamond Bracelet, charm bracelets like The Forest Fairy Diamond Bracelet,  Friends Forever Diamond Bracelet, Joy Diamond Bracelet-cum-Pendant that is open to customization too.There are beautiful, pretty, very feminine and dainty designer diamond bangles on Candere, the styling suited to match your personalities or make your selection easier based on your moods or the likes & tastes of the one you are going to gift them to. Try the cross curved Neeharika Diamond Bangle with pretty leaves for your party or the Aaliya Diamond Bangle for your best friend’s marriage.',
+    braceleteAbout: ' If you are a solitaire lover there is the Frele Diamond Bracelet and Vanilla Diamond Bracelet for those who prefer more traditional Kadas, there is the openable bracelet – Stars and Stripes Diamond Bracelet and the Kalamkari Diamond Kada. For the minimalists we have a series of delicate bracelets like the New Leaf Diamond Bracelet, charm bracelets like The Forest Fairy Diamond Bracelet,  Friends Forever Diamond Bracelet, Joy Diamond Bracelet-cum-Pendant that is open to customization too.There are beautiful, pretty, very feminine and dainty designer diamond bangles on Candere, the styling suited to match your personalities or make your selection easier based on your moods or the likes & tastes of the one you are going to gift them to. Try the cross curved Neeharika Diamond Bangle with pretty leaves for your party or the Aaliya Diamond Bangle for your best friend’s marriage.',
    
   },
 };
@@ -35,3 +35,6 @@ bracelete.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
   sidenav.classList.toggle("toggle");
 });
+
+
+
